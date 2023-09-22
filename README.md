@@ -1,6 +1,6 @@
 # ✌️🔗🧭 doubly-linked-list-navigator
 
-A TypeScript library to navigate into a doubly linked list.
+A TypeScript library extending the [doubly-linked-list](https://github.com/rfieve/doubly-linked-list) with navigation.
 
 ## Table of Content
 
