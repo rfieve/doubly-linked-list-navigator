@@ -1,6 +1,6 @@
 {
     "name": "@romainfieve/doubly-linked-list-navigator",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
@@ -32,7 +32,7 @@
         "url": "https://github.com/rfieve/doubly-linked-list-navigator/issues"
     },
     "dependencies": {
-        "@romainfieve/doubly-linked-list": "^3.1.0"
+        "@romainfieve/doubly-linked-list": "^3.1.1"
     },
     "devDependencies": {
         "@jest/types": "^29.6.3",
