@@ -10,6 +10,24 @@ describe('DoublyLinkedListNavigator', () => {
         expect(mockedDLLNavigator.current?.data).toBe(2)
     })
 
+    it('should goAt correctly', () => {
+        mockedDLLNavigator.goAt(1)
+        expect(mockedDLLNavigator.current?.data).toBe(5)
+    })
+
+    it('should not goAt beyond the tail', () => {
+        mockedDLLNavigator.goAt(100)
+        expect(mockedDLLNavigator.current?.data).toBe(89)
+    })
+
+    it('should not fail when goingAt through an empty dll', () => {
+        mockedEmptyDLLNavigator.goAt(100)
+        expect(mockedEmptyDLLNavigator.current?.data).toBeUndefined()
+
+        mockedEmptyDLLNavigator.goAt(-100)
+        expect(mockedEmptyDLLNavigator.current?.data).toBeUndefined()
+    })
+
     it('should go correctly', () => {
         mockedDLLNavigator.go(1)
         expect(mockedDLLNavigator.current?.data).toBe(32)

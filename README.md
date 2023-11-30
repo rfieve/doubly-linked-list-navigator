@@ -40,7 +40,8 @@ dllNav
     .goNext() // .current.data === 13
     .goTail() // .current.data === 89
     .goHead() // .current.data === 2
-    .current // { data: 2, next: ...}
+    .goAt(1) // .current.data === 5
+    .current // { data: 5, next: ...}
 ```
 
 ---

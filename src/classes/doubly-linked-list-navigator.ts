@@ -13,6 +13,27 @@ export class DoublyLinkedListNavigator<T> extends DoublyLinkedList<T> {
     }
 
     /**
+     * Sets the current cursor position to the step at the provided index, from the head.
+     * @param index the number of steps to go to.
+     * @returns the dll navigator.
+     */
+    public readonly goAt = (index: number) => {
+        let current = this.head
+        let i = 0
+
+        while (i < index && current?.next) {
+            current = current.next
+            i++
+        }
+
+        if (current) {
+            this.cursor = current
+        }
+
+        return this
+    }
+
+    /**
      * Sets the current cursor position to the amount of steps from the current cursor position.
      * @param steps the number of steps to go to.
      * @returns the dll navigator.
